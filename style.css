@@ -1,90 +1,90 @@
-
 body {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5FBFF; 
+  background-color: #E0F7FA; /* Light blue background */
 }
 
 h1, h2 {
   font-weight: normal;
   margin: 1rem 0;
   font-family: "Poppins", sans-serif;
+  color: #005377; /* Darker blue */
 }
 
 p {
   line-height: 1.5;
   margin-bottom: 1rem;
+  color: #333;
 }
 
 a {
-  color: #333; /* Dark gray text for links */
+  color: #003366;
   text-decoration: none;
 }
 
 a:hover {
-  color: #666; /* Slightly darker gray on hover */
+  color: #005377;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-/* Header Styles */
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #A7C7E7; /* Darker blue background for the header */
+  text-align: center;
 }
 
-.profile-pic {
-  width: 200px;
-  height: 250px;
-  border-radius: 50%;
-  
-  margin-right: 1rem; /* Add margin to create space between the image and text */
+.title-section {
+  margin-bottom: 1rem;
 }
 
-.dark-mode-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-/* Section Styles */
 section {
   padding: 2rem;
 }
 
-.about,
-.work-experience {
+.about {
   border-bottom: 1px solid #ddd;
 }
 
-
 .social-icons {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  background-color: #e0e0e0; /* Slightly darker gray for footer */
+  text-align: center;
+  padding: 1rem;
+  background-color: #A7C7E7; /* Darker blue */
   border-top: 1px solid #ddd;
-  z-index: 100; /* Ensure it appears above other content */
 }
+
 .social-icons a {
   margin: 0 1rem;
-  color: #666; /* Gray text for links */
+  color: #003366; /* Dark blue links */
   font-size: 14px;
   padding: 0.5rem 1rem;
   border: 1px solid #ddd;
   border-radius: 3px;
+  display: inline-block;
 }
 
 .social-icons a:hover {
-  background-color: #f0f0f0;
+  background-color: #E0F7FA; /* Light blue hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+  
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 12px;
+    padding: 0.4rem;
+  }
 }
