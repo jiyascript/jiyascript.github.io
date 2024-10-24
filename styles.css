@@ -71,4 +71,10 @@ p {
     font-size: 12px;
     margin-bottom: 0.5rem;
   }
+  .profile-pic {
+    width: 80%; /* Adjust width for mobile */
+    max-width: 150px; /* Maximum size for mobile */
+    margin-left: auto; /* Center image */
+    margin-right: auto; /* Center image */
+  }
 }
