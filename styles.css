@@ -7,22 +7,20 @@ body {
   padding-bottom: 60px; /* Prevent content overlap with the footer */
 }
 
-/* Title Section */
 .title-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Center horizontally */
+  text-align: left; /* Align text to the left */
   width: 100%;
   margin-bottom: 1rem;
 }
 .profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    object-fit: cover;
-    margin: 20px 0;
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  border-radius: 50%; /* Make it a circle */
+  object-fit: cover; /* Crop image to fit */
+  margin-left: 20px; /* Space between title and image */
 }
 
 
