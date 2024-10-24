@@ -7,14 +7,22 @@ body {
 
 h1, h2 {
   font-weight: normal;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-family: "Poppins", sans-serif;
   color: #005377; /* Darker blue */
+}
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
 p {
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
   color: #333;
 }
 
