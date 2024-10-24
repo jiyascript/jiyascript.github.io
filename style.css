@@ -4,16 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #E0F7FA; /* Light blue background */
-  padding-bottom: 60px; /* Prevents content overlap with the footer */
-}
-
-/* Heading Styles */
-h1, h2 {
-  font-weight: normal;
-  margin: 0.5rem 0;
-  font-family: "Poppins", sans-serif;
-  color: #005377; /* Darker blue */
-  text-align: center;
+  padding-bottom: 60px; /* Prevent content overlap with the footer */
 }
 
 /* Title Section */
@@ -35,44 +26,28 @@ p {
   text-align: center;
 }
 
-/* Link Styles */
-a {
-  color: #003366; /* Dark blue links */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #005377; /* Slightly darker blue on hover */
-}
-
-/* Header Section */
-.header {
-  padding: 2rem;
-  background-color: #A7C7E7; /* Darker blue for the header */
-  text-align: center;
-}
-
 /* Footer (Social Icons) Styles */
 .social-icons {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 1rem;
+  bottom: 20px; /* Space from bottom for floating effect */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
   background-color: #A7C7E7; /* Darker blue for the footer */
+  border-radius: 20px; /* Rounded corners for floating look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 1rem;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
 }
 
 .social-icons a {
   color: white; /* White links */
   font-size: 14px;
   padding: 0.5rem 1rem;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .social-icons a:hover {
@@ -81,23 +56,13 @@ a:hover {
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
-  /* Adjust heading sizes */
-  h1, h2 {
-    font-size: 1.5rem;
-  }
-  
-  /* Adjust paragraph size */
-  p {
-    font-size: 1rem;
-  }
-
-  /* Footer social icons */
   .social-icons {
-    flex-direction: column; /* Stack social icons vertically on small screens */
+    flex-direction: column;
+    padding: 1rem;
   }
 
   .social-icons a {
     font-size: 12px;
-    padding: 0.4rem;
+    margin-bottom: 0.5rem;
   }
 }
