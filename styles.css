@@ -16,11 +16,14 @@ body {
   margin-bottom: 1rem;
 }
 .profile-pic {
-  width: 100px; /* Adjust width as needed */
-  height: 100px; /* Adjust height as needed */
-  border-radius: 80%; /* Make it a circle */
-  margin-left: 20px; /* Space between title and image */
+    width: 100px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100px; /* Set a max height to control size */
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover; /* Ensures the image covers the area */
+    margin-left: 20px; /* Space between title and image */
 }
+
 
 
 /* Paragraph Styles */
