@@ -18,9 +18,9 @@ body {
   margin-bottom: 1rem;
 }
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
     object-fit: cover;
     margin: 20px 0;
 }
