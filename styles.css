@@ -6,7 +6,13 @@ body {
   background-color: #E0F7FA; /* Light blue background */
   padding-bottom: 60px; /* Prevent content overlap with the footer */
 }
-
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+}
 /* Title Section */
 .title-section {
   display: flex;
