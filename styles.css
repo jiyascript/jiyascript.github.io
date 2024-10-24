@@ -18,7 +18,7 @@ body {
 .profile-pic {
   width: 100px; /* Adjust width as needed */
   height: 100px; /* Adjust height as needed */
-  border-radius: 50%; /* Make it a circle */
+  border-radius: 80%; /* Make it a circle */
   object-fit: cover; /* Crop image to fit */
   margin-left: 20px; /* Space between title and image */
 }
