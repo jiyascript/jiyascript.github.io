@@ -1,71 +1,80 @@
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #E0F7FA; /* Light blue background */
+  color: #333; /* Default text color */
 }
+
 
 h1, h2 {
   font-weight: normal;
   margin: 0.5rem 0;
   font-family: "Poppins", sans-serif;
-  color: #005377; /* Darker blue */
+  color: #005377; /* Darker blue for headings */
 }
+
+/* Title Section */
 .title-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
   justify-content: center;
+  text-align: center;
   width: 100%;
+  margin-bottom: 1rem;
 }
+
 
 p {
   line-height: 1.5;
   margin: 0.5rem 0;
-  color: #333;
+  color: #333; /* Dark gray text */
 }
 
+
 a {
-  color: #003366;
+  color: #003366; /* Dark blue links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #005377;
+  color: #005377; 
 }
 
+/* Header Styles */
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #A7C7E7; /* Darker blue background for the header */
+  background-color: #A7C7E7; 
   text-align: center;
+  color: white; 
 }
 
-.title-section {
-  margin-bottom: 1rem;
-}
 
 section {
   padding: 2rem;
 }
 
+
 .about {
   border-bottom: 1px solid #ddd;
 }
 
+/* Footer (Social Icons) Styles */
 .social-icons {
   text-align: center;
   padding: 1rem;
-  background-color: #A7C7E7; /* Darker blue */
+  background-color: #A7C7E7; 
   border-top: 1px solid #ddd;
 }
 
 .social-icons a {
   margin: 0 1rem;
-  color: #003366; /* Dark blue links */
+  color: #003366;
   font-size: 14px;
   padding: 0.5rem 1rem;
   border: 1px solid #ddd;
@@ -74,10 +83,9 @@ section {
 }
 
 .social-icons a:hover {
-  background-color: #E0F7FA; /* Light blue hover */
-}
+  background-color: #E0F7FA; 
 
-/* Responsive design for mobile */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .header {
     padding: 1rem;
