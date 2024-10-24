@@ -1,18 +1,19 @@
-
+/* Body Styles */
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #E0F7FA; /* Light blue background */
-  color: #333; /* Default text color */
+  padding-bottom: 60px; /* Prevents content overlap with the footer */
 }
 
-
+/* Heading Styles */
 h1, h2 {
   font-weight: normal;
   margin: 0.5rem 0;
   font-family: "Poppins", sans-serif;
-  color: #005377; /* Darker blue for headings */
+  color: #005377; /* Darker blue */
+  text-align: center;
 }
 
 /* Title Section */
@@ -26,79 +27,75 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-
+/* Paragraph Styles */
 p {
   line-height: 1.5;
   margin: 0.5rem 0;
   color: #333; /* Dark gray text */
+  text-align: center;
 }
 
-
+/* Link Styles */
 a {
   color: #003366; /* Dark blue links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #005377; 
+  color: #005377; /* Slightly darker blue on hover */
 }
 
-/* Header Styles */
+/* Header Section */
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2rem;
-  background-color: #A7C7E7; 
+  background-color: #A7C7E7; /* Darker blue for the header */
   text-align: center;
-  color: white; 
-}
-
-
-section {
-  padding: 2rem;
-}
-
-
-.about {
-  border-bottom: 1px solid #ddd;
 }
 
 /* Footer (Social Icons) Styles */
 .social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   padding: 1rem;
-  background-color: #A7C7E7; 
-  border-top: 1px solid #ddd;
+  background-color: #A7C7E7; /* Darker blue for the footer */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .social-icons a {
-  margin: 0 1rem;
-  color: #003366;
+  color: white; /* White links */
   font-size: 14px;
   padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
   border-radius: 3px;
-  display: inline-block;
 }
 
 .social-icons a:hover {
-  background-color: #E0F7FA; 
+  background-color: #E0F7FA; /* Light blue hover */
+}
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
-  .header {
-    padding: 1rem;
-  }
-  
+  /* Adjust heading sizes */
   h1, h2 {
     font-size: 1.5rem;
   }
   
+  /* Adjust paragraph size */
   p {
     font-size: 1rem;
   }
-  
+
+  /* Footer social icons */
+  .social-icons {
+    flex-direction: column; /* Stack social icons vertically on small screens */
+  }
+
   .social-icons a {
     font-size: 12px;
     padding: 0.4rem;
