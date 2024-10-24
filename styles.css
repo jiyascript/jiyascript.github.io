@@ -63,13 +63,14 @@ p {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .social-icons {
-    flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem; /* Less padding on mobile */
+    height: 40px; /* Adjust height for mobile */
+    font-size: 12px; /* Smaller font size */
   }
 
   .social-icons a {
-    font-size: 12px;
-    margin-bottom: 0.5rem;
+    padding: 0.25rem; /* Smaller padding for links */
+    margin: 0 5px; /* Reduce margin between icons */
   }
   .profile-pic {
     width: 80%; /* Adjust width for mobile */
